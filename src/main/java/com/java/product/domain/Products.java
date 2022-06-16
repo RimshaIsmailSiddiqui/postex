@@ -44,4 +44,8 @@ public class Products {
     public void setPrice(Float price) {
         this.price = price;
     }
+    public void setPric(Float price) {
+        this.price = price;
+    }
+
 }
