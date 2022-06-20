@@ -38,10 +38,12 @@ public class ProductController {
     public void add(@RequestBody Products product) {
         productService.save(product);
     }
+
     @DeleteMapping("/products/{id}")
     public void delete(@PathVariable Integer id) {
         productService.delete(id);
     }
+
     @PutMapping("/products/{id}")
     public ResponseEntity<?> update(@RequestBody Products product, @PathVariable Integer id) {
         try {
